@@ -1,0 +1,95 @@
+*PPD-Adobe: "4.3"
+*%
+*% Zebra P330i card printer (EPCL) - CUPS PPD for macOS / Linux
+*% Filter: rastertoepcl (EPCL encoding derived from pyepcl, LGPLv3)
+*%
+*FormatVersion: "4.3"
+*FileVersion: "1.0.1"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "ZBP330I.PPD"
+*Manufacturer: "Zebra"
+*Product: "(P330i)"
+*ModelName: "Zebra P330i Card Printer"
+*ShortNickName: "Zebra P330i"
+*NickName: "Zebra P330i Card Printer (EPCL)"
+*1284DeviceID: "MFG:ZEBRA CARD PRINTER;MDL:P330i;"
+*PSVersion: "(3010.000) 0"
+*LanguageLevel: "3"
+*ColorDevice: True
+*DefaultColorSpace: RGB
+*FileSystem: False
+*Throughput: "1"
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*cupsVersion: 2.3
+*cupsModelNumber: 0
+*cupsManualCopies: True
+*cupsFilter: "application/vnd.cups-raster 0 /Library/Printers/Zebra/P330i/rastertoepcl"
+
+*% 1030 x 646 dots at 300 dpi = the printer's full print area (CR80 + bleed)
+*OpenUI *PageSize/Card Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: CR80
+*PageSize CR80/CR80 ID Card (full bleed): "<</PageSize[247.2 155.04]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion/Card Size: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: CR80
+*PageRegion CR80/CR80 ID Card (full bleed): "<</PageSize[247.2 155.04]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: CR80
+*ImageableArea CR80/CR80 ID Card (full bleed): "0 0 247.2 155.04"
+*DefaultPaperDimension: CR80
+*PaperDimension CR80/CR80 ID Card (full bleed): "247.2 155.04"
+
+*OpenUI *Resolution/Resolution: PickOne
+*OrderDependency: 20 AnySetup *Resolution
+*DefaultResolution: 300dpi
+*Resolution 300dpi/300 DPI: "<</HWResolution[300 300]/cupsBitsPerColor 8/cupsColorOrder 0/cupsColorSpace 1>>setpagedevice"
+*CloseUI: *Resolution
+
+*OpenUI *ColorModel/Color Mode: PickOne
+*OrderDependency: 10 AnySetup *ColorModel
+*DefaultColorModel: RGB
+*ColorModel RGB/Color: "<</cupsColorOrder 0/cupsColorSpace 1/cupsBitsPerColor 8>>setpagedevice"
+*CloseUI: *ColorModel
+
+*OpenUI *zeRibbon/Ribbon: PickOne
+*OrderDependency: 30 AnySetup *zeRibbon
+*DefaultzeRibbon: YMCKO
+*zeRibbon YMCKO/Color YMCKO: ""
+*zeRibbon K/Monochrome (black resin): ""
+*CloseUI: *zeRibbon
+
+*OpenUI *zeOverlay/Overlay Varnish: PickOne
+*OrderDependency: 30 AnySetup *zeOverlay
+*DefaultzeOverlay: On
+*zeOverlay On/Full card: ""
+*zeOverlay Off/None: ""
+*CloseUI: *zeOverlay
+
+*OpenUI *zeBlackExtract/Black text on resin K panel: PickOne
+*OrderDependency: 30 AnySetup *zeBlackExtract
+*DefaultzeBlackExtract: Medium
+*zeBlackExtract Off/Off (all composite color): ""
+*zeBlackExtract Low/Pure black only: ""
+*zeBlackExtract Medium/Near black (recommended): ""
+*zeBlackExtract High/Dark colors too: ""
+*CloseUI: *zeBlackExtract
+
+*OpenUI *zeMonoThreshold/Monochrome threshold: PickOne
+*OrderDependency: 30 AnySetup *zeMonoThreshold
+*DefaultzeMonoThreshold: 128
+*zeMonoThreshold 96/Lighter (96): ""
+*zeMonoThreshold 128/Normal (128): ""
+*zeMonoThreshold 160/Darker (160): ""
+*zeMonoThreshold 192/Darkest (192): ""
+*CloseUI: *zeMonoThreshold
+
+*DefaultFont: Courier
+*Font Courier: Standard "(002.004S)" Standard ROM
+*Font Helvetica: Standard "(001.006S)" Standard ROM
+*Font Times-Roman: Standard "(001.007S)" Standard ROM
