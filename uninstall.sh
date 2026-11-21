@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Matthew Puckett
 # Remove the Zebra P330i CUPS driver and queue.
 # Usage: sudo ./uninstall.sh
 set -uo pipefail

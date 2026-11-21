@@ -135,4 +135,11 @@ lp -d Zebra_P330i -o raw /tmp/cal.epcl
 
 ## License
 
-LGPL-3.0-or-later (see `COPYING.LESSER` and `COPYING`), matching pyepcl, which the EPCL encoding is derived from.
+The repo is split-licensed:
+
+| Files | License |
+|---|---|
+| `rastertoepcl.c` (the CUPS filter) | **LGPL-3.0-or-later**: see `COPYING.LESSER` and `COPYING`. Its EPCL encoding is ported from [pyepcl](https://github.com/BryceSchroeder/pyepcl) (LGPL-3.0), so it carries pyepcl's license. |
+| Everything else: PPD, install/uninstall scripts, test card generator, docs | **MIT**: see `LICENSE` |
+
+In practice, you can use, install and redistribute the driver freely. The LGPL only asks that if you **modify `rastertoepcl.c` and distribute it**, you share those changes under the same license.

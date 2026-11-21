@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: LGPL-3.0-or-later */
 /*
  * rastertoepcl - CUPS raster filter for the Zebra P330i card printer (EPCL)
  *

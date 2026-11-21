@@ -2,6 +2,7 @@
 *%
 *% Zebra P330i card printer (EPCL) - CUPS PPD for macOS / Linux
 *% Filter: rastertoepcl (EPCL encoding derived from pyepcl, LGPLv3)
+*% This PPD: SPDX-License-Identifier: MIT, Copyright (c) 2026 Matthew Puckett
 *%
 *FormatVersion: "4.3"
 *FileVersion: "1.0.1"

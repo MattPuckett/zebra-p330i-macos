@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Matthew Puckett
 """Generate a 1030x646 @ 300 dpi test card (testcard.pdf) for the Zebra P330i.
 
 Checks orientation (TOP LEFT / BOTTOM RIGHT), edge registration (border),

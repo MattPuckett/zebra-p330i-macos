@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Matthew Puckett
 # Build and install the Zebra P330i CUPS driver on macOS (Apple Silicon or Intel).
 # Usage: sudo ./install.sh        (QUEUE=MyName sudo -E ./install.sh to rename the queue)
 set -euo pipefail
